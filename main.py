@@ -18,7 +18,7 @@ def connect():
         try:
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.settimeout(5)
-            sock.connect(('127.0.0.1', 1337))
+            sock.connect(('192.168.0.3', 1337))
             
             break
         except:
