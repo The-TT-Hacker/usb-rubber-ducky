@@ -1,4 +1,0 @@
-﻿  main.cpp
-  keylogger.cpp
-  Generating Code...
-C:\Users\Tim Thacker\Documents\Computer Engineering\COMP6841\usb-rubber-ducky\somethingawesome\main.cpp(2,10): error C1083:  Cannot open include file: 'sys/socket.h': No such file or directory
